@@ -1,11 +1,17 @@
-/* h1:hover{
-    text-decoration: underline;
-} */
-
-.container{
-    background-color: aqua;
-    width: fit-content;
+h1{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
 }
-.underline-content {
-    background-color: gray;
+h1::after{
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color:red ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+h1:hover::after{
+    width: 0%;
 }
