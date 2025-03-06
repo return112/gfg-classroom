@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width" , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .child {
+            color: white;
+            background-color: red;
+            padding: 1rem;
+            flex: 1 1 0;
+            /* flex-grow , flex-shrink , flex-basis  */
+            font-weight: 700;
+            border: 4px solid black;
+        }
+
+        @media (max-width : 760px) {
+            .child {
+                flex: 1 1 calc (33% - 1rem);
+            }
+        }
+
+        @media (max-width : 480px) {
+            .child {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child">about us</div>
+        <div class="child">contact us</div>
+        <div class="child">careers</div>
+        <div class="child">know more</div>
+        <div class="child">login</div>
+    </div>
+</body>
+
+</html>
