@@ -1,0 +1,17 @@
+h1{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+h1::after{
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color:red ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+h1:hover::after{
+    width: 0%;
+}

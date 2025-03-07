@@ -1,0 +1,17 @@
+/* h1:first-child{
+    color: red;
+    background-color: aqua;
+} */
+
+h1:nth-child(even){
+    color: brown;
+    background-color: aqua;
+}
+h1:nth-child(odd){
+    color: blue;
+    background-color:hotpink;
+}
+a{
+    color: blueviolet;
+    
+}
